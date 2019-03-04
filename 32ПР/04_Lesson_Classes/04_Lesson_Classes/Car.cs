@@ -63,7 +63,7 @@ namespace _04_Lesson_Classes
 
 
         #region C#6.0
-        public int CurrentBalance { private get; set; } //---avtoproperty---snipet : prop tab-tab
+        public int CurrentBalance { private get; set; } = 1000; //---avtoproperty---snipet : prop tab-tab
         #endregion
 
         #region C#7.0
@@ -74,6 +74,8 @@ namespace _04_Lesson_Classes
             get => name;
             set => name = value;
         }
+
+        public void ShowCar() => Console.WriteLine(pswd);
 
         #endregion
 
