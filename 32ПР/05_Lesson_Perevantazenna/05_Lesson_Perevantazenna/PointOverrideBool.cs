@@ -24,5 +24,31 @@ namespace _05_Lesson_Perevantazenna
         {
             return !(p1 > p2);
         }
+
+
+        public static bool operator >=(Point p1, Point p2)
+        {
+            return p1.X >= p2.X && p1.Y >= p2.Y;
+        }
+        public static bool operator <=(Point p1, Point p2)
+        {
+            return !(p1 >= p2);
+        }
+
+
+        #region OverrideTrueFalse
+        public static bool operator true(Point p)
+        {
+            return p.X != 0 && p.Y != 0;
+        }
+        public static bool operator false(Point p)
+        {
+            return !p;
+        }
+        public static bool operator !(Point p)
+        {
+            return !(p.X != 0 && p.Y != 0);
+        }
+        #endregion
     }
 }

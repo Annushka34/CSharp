@@ -8,6 +8,7 @@ namespace _05_Lesson_Perevantazenna
 {
     public partial class Point
     {
+        #region OverrideBool
         public override string ToString()
         {
             return String.Format("X = {0} Y = {1}", X, Y);
@@ -20,5 +21,7 @@ namespace _05_Lesson_Perevantazenna
         {
             return (X.ToString() + Y.ToString()).GetHashCode();
         }
+        #endregion
+    
     }
 }

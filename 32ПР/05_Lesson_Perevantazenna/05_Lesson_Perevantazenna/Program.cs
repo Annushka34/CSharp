@@ -26,6 +26,25 @@ namespace _05_Lesson_Perevantazenna
             Console.WriteLine("Hash Code p1 = " + p1.GetHashCode());
 
             Console.WriteLine("p > p1  " + (p > p1));
+
+            if (p)
+            {
+                Console.WriteLine("point is not null");
+            }
+            Console.WriteLine(p ? "point is not null" : "point is NULL");
+
+            Console.WriteLine("------------------   +  ----------------------");
+            Console.WriteLine((p+p1));
+            p++;
+            ++p;
+            Console.WriteLine(p);
+
+            int d = 5 + p;
+            Point p4 = p + 10;
+            Console.WriteLine(d);
+            Console.WriteLine(p4);
+            p4 += p;
+            Console.WriteLine(p4);
         }
     }
 }
