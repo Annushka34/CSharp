@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace _04_LessonStruct
@@ -66,6 +67,12 @@ namespace _04_LessonStruct
             hc.age = 13;
             Console.WriteLine($"name { hc.name } age { hc.age }   hashCode {hc.GetHashCode()}");
             Console.WriteLine($"name { hc2.name } age { hc2.age }    hashCode {hc2.GetHashCode()}");
+
+            DateTime zeroTime = new DateTime(1, 1, 1);
+            DateTime dt = new DateTime(1986, 12, 10);
+            TimeSpan t = dt - DateTime.Now;
+            int years = (zeroTime + t).Year - 1;
+            Thread.Sleep(200);
         }
 
         static void Change ( ref HumanStruct hs)
