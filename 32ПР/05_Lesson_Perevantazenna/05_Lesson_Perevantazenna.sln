@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Lesson_Perevantazenna", "05_Lesson_Perevantazenna\05_Lesson_Perevantazenna.csproj", "{975CAECC-82C5-4935-A24A-2F2CE95BC351}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Lesson_Perevantazenna", "06_Lesson_Perevantazenna\06_Lesson_Perevantazenna.csproj", "{D181F264-FD27-4ABE-9115-3ABFB254AA11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{975CAECC-82C5-4935-A24A-2F2CE95BC351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975CAECC-82C5-4935-A24A-2F2CE95BC351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975CAECC-82C5-4935-A24A-2F2CE95BC351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D181F264-FD27-4ABE-9115-3ABFB254AA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D181F264-FD27-4ABE-9115-3ABFB254AA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D181F264-FD27-4ABE-9115-3ABFB254AA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D181F264-FD27-4ABE-9115-3ABFB254AA11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,11 @@ namespace _05_Lesson_Perevantazenna
         {
             return (X.ToString() + Y.ToString()).GetHashCode();
         }
+        public string MyToString()
+        {
+            return String.Format("my X = {0} my Y = {1}", X, Y);
+        }
         #endregion
-    
+
     }
 }

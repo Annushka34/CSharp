@@ -44,7 +44,7 @@ namespace _05_Lesson_Perevantazenna
             Console.WriteLine(d);
             Console.WriteLine(p4);
             p4 += p;
-            Console.WriteLine(p4);
+            Console.WriteLine(p4.MyToString());
         }
     }
 }
