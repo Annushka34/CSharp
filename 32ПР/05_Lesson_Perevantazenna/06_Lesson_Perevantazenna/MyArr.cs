@@ -20,6 +20,12 @@ namespace _06_Lesson_Perevantazenna
                 arr[i] = r.Next(0, 10);
             }
         }
+
+            public MyArr(int s)
+            {
+                size = s;
+                arr = new int[size];
+            }
         public override string ToString()
         {
             for (int i = 0; i < size; i++)
@@ -91,14 +97,34 @@ namespace _06_Lesson_Perevantazenna
             return myArr;
         }
 
-        public static explicit operator MyArrDouble (MyArr myArr)
+        public static explicit operator MyArrDouble(MyArr myArr)
         {
             MyArrDouble myArrDouble = new MyArrDouble(myArr.size);
             for (int i = 0; i < myArr.size; i++)
             {
-                myArrDouble.Arr[i] = myArr.arr[i];
+                myArrDouble.Arr[i] = (double)myArr.arr[i];
             }
             return myArrDouble;
         }
+
+        public static implicit operator MyArr(MyArrDouble myArrD)
+        {
+            MyArr myArrInt = new MyArr(myArrD.Size);
+            for (int i = 0; i < myArrD.Size; i++)
+            {
+                myArrInt.arr[i] = (int)myArrD.Arr[i];
+            }
+            return myArrInt;
+        }
+
+        //public static implicit operator MyArrDouble(MyArr myArr)
+        //{
+        //    MyArrDouble myArrDouble = new MyArrDouble(myArr.size);
+        //    for (int i = 0; i < myArr.size; i++)
+        //    {
+        //        myArrDouble.Arr[i] = (double)myArr.arr[i];
+        //    }
+        //    return myArrDouble;
+        //}
     }
 }

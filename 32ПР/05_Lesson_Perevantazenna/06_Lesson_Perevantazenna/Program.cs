@@ -20,6 +20,8 @@ namespace _06_Lesson_Perevantazenna
 
             Console.WriteLine(arrClass[INDEXES.Second]);
 
+
+
             int x = (int)5.2; // explicit
             double y = x; // implicit
 
@@ -33,11 +35,31 @@ namespace _06_Lesson_Perevantazenna
             }
 
             MyArr arr2 = (MyArr)5;
-            Console.WriteLine("\n---------------------------------------------");
+            Console.WriteLine("\n------------------INT---------------------------");
             Console.WriteLine(arr2);
 
             MyArrDouble arrDouble = (MyArrDouble)arrClass;
+            // MyArrDouble arrDouble = arrClass;
+            Console.WriteLine("\n------------------DOUBLE---------------------------");
+
             Console.WriteLine(arrDouble);
+            Console.WriteLine("\n-----------------INT----------------------------");
+
+            MyArr arr3 = arrDouble;
+            Console.WriteLine(arr3);
+
+            string str = "(5+2*3+1)";
+            str.Replace("5+2", "7");
+            string substr = str.Substring(2, 5);
+        }
+
+        static int FindMult(string str)
+        {
+           return str.IndexOf("*");
+        }
+        static int FindDiv(string str)
+        {
+            return str.IndexOf("/");
         }
     }
 }
