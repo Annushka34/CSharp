@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Interfaces", "08_Interfaces\08_Interfaces.csproj", "{6E2FD2B8-E399-4A34-AD91-A488365CA2E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Classes_Polymorph", "08_Classes_Polymorph\08_Classes_Polymorph.csproj", "{DE26679D-8B71-4807-BF02-F3D63275A989}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2FD2B8-E399-4A34-AD91-A488365CA2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2FD2B8-E399-4A34-AD91-A488365CA2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2FD2B8-E399-4A34-AD91-A488365CA2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2FD2B8-E399-4A34-AD91-A488365CA2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE26679D-8B71-4807-BF02-F3D63275A989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE26679D-8B71-4807-BF02-F3D63275A989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE26679D-8B71-4807-BF02-F3D63275A989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE26679D-8B71-4807-BF02-F3D63275A989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9788CB64-F589-4EAB-9E84-70442857141F}
+	EndGlobalSection
+EndGlobal
