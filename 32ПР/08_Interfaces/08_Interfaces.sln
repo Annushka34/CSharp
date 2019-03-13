@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Interfaces", "08_Interfa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Classes_Polymorph", "08_Classes_Polymorph\08_Classes_Polymorph.csproj", "{DE26679D-8B71-4807-BF02-F3D63275A989}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_House", "08_House\08_House.csproj", "{27C08F79-ED88-41CA-B907-BA48E167BA50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DE26679D-8B71-4807-BF02-F3D63275A989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE26679D-8B71-4807-BF02-F3D63275A989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE26679D-8B71-4807-BF02-F3D63275A989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C08F79-ED88-41CA-B907-BA48E167BA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C08F79-ED88-41CA-B907-BA48E167BA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C08F79-ED88-41CA-B907-BA48E167BA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C08F79-ED88-41CA-B907-BA48E167BA50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
