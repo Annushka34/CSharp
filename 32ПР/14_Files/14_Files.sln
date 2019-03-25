@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_CreateDirsFiles", "14_Cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Stream", "14_Stream\14_Stream.csproj", "{0CC4636A-23BD-400E-9B04-498B000C8E5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_MemoryStream", "14_MemmoryStream\14_MemoryStream.csproj", "{0398F9DB-2ADA-4603-953E-3A699D0ECDC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0CC4636A-23BD-400E-9B04-498B000C8E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CC4636A-23BD-400E-9B04-498B000C8E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CC4636A-23BD-400E-9B04-498B000C8E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0398F9DB-2ADA-4603-953E-3A699D0ECDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0398F9DB-2ADA-4603-953E-3A699D0ECDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0398F9DB-2ADA-4603-953E-3A699D0ECDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0398F9DB-2ADA-4603-953E-3A699D0ECDC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
