@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
@@ -50,18 +51,9 @@ namespace _16_JSON
             //-----without private fields
             Firm f3 = new Firm(7, "SuperCoolGuys_3");
             string str3 = JsonConvert.SerializeObject(f3);
-            //   Console.WriteLine(str3);
-           Firm fNew_3 =  (Firm)JsonConvert.DeserializeObject(str3, typeof(Firm));
+            Console.WriteLine(str3);
+            Firm fNew_3 = (Firm)JsonConvert.DeserializeObject(str3, typeof(Firm));
             Console.WriteLine(fNew_3);
-
-
-            //Random r = new Random();
-            //for (int i = 0; i < 200; i++)
-            //{
-            //    Console.WriteLine(r.Next(0, 5));
-            //    Thread.Sleep(10);
-            //}
-
         }
     }
 }

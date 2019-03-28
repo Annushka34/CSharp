@@ -13,7 +13,6 @@ namespace _16_XML
     {
         static void Main(string[] args)
         {
-
             //List<Person> p = new List<Person>()
             //{
             //    new Person("Semen", 30),
