@@ -34,6 +34,7 @@ namespace _17_Func_Predicate_Compar
             SetColor(ConsoleColor.Green);
             List<Flower> flowers = GetFlowers();
             flowers.ForEach(ShowFlower);
+            Console.WriteLine("---------------------------------");
 
             SetColor(ConsoleColor.Cyan);
             flowers.Sort(Compare);
@@ -56,39 +57,88 @@ namespace _17_Func_Predicate_Compar
             {
                 Console.WriteLine(item);
             }
+
+            //var person = new { Name = "AAAA", Age = 12 };
+            //var flower1 = new { FlowerName = flowers[0].Name, FlowerPrice = flowers[0].Price, flowers[0].Type };
+            //Console.WriteLine(person.Name+person.Age);
+
+            var anonimList = new []
+            {
+                new {Name = "Ivanov", Salary = 4500},
+                new {Name = "Petrov", Salary = 6200},
+                new {Name = "Sidorov", Salary = 7800}
+            }.ToList();
+
+
+            anonimList.ForEach(f => Console.WriteLine(f.Name + "  " + f.Salary));
+
+            //----DELEGATES IN SELECT
+            var personNames = flowers.Select(delegate (Flower f) { return f.Name; });
+            var personNames2 = flowers.Select((f) => f.Name); 
+            var personNames3 = flowers.Select(f => f.Name);
+
+
+            foreach (var item in anonimList)
+            {
+                Console.WriteLine(item.Name);
+            }
+
+            anonimList.Add(new { Name = "Vasiljev", Salary = 9200 });
+            anonimList.ForEach((item) => Console.WriteLine(item.Name +"   "+item.Salary));
+           // anonimList.ForEach((item) => item.Salary*=10));
+
+            //var anonimList_2 = new object[]
+            //{
+            //    new {Name = "Ivanov", Salary = 4500},
+            //    new {Name = "Petrov", Salary = 6200},
+            //    new {Name = "Sidorov", Salary = 7800}
+            //}.ToList();
+            //foreach (var item in anonimList_2)
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
         }
 
-        static string SelectNames(Flower f)
+        static string SelectNames(Flower f, int ind)//  -- Select
+        {
+            return "["+ind.ToString()+"]"+f.Name;
+        }
+        static string SelectNames_2(Flower f)//  -- Select
         {
             return f.Name;
         }
 
-        static string ComposeStrings(Flower f)
+        static string ComposeStrings(Flower f)//---Select
         {
             return f.Name + ":" + f.Type +":" + f.Price.ToString();
         }
 
-        static bool FindBlooming(Flower flower)
+        static bool FindBlooming(Flower flower)//---FindAll
         {
             return flower.Type == "Квітучі";
         }
 
-        static bool ExpenciveOnly(Flower f)
+        static bool ExpenciveOnly(Flower f)//---FindAll
         {
             return f.Price > 50;
         }
 
-        static int Compare (Flower f1, Flower f2)
+        static int Compare (Flower f1, Flower f2)//---Sort
         {
             return f1.Price == f2.Price? 0 : f1.Price > f2.Price ? 1 : -1;
         }
 
-        static void ShowFlower (Flower f)
+        static void ShowFlower (Flower f)//---ForEach
         {
             Console.WriteLine(f.Type +"  " + f.Name + "  " + f.Price);
         }
 
-        static List<Flower> GetFlowers ()
+        static void ShowFlower_2(Flower f, char ch)//---ForEach
+        {
+            Console.WriteLine(f.Type + "  " + f.Name + "  " + f.Price);
+        }
+
+        static List<Flower> GetFlowers ()//---Create List
         {
             List<Flower> flowers = new List<Flower>
             {
@@ -101,6 +151,8 @@ namespace _17_Func_Predicate_Compar
             return flowers;
         }
 
+
+        //----------FUNC-------------------
         static string ReturnName()
         {
            Console.WriteLine("Enter name: ");
@@ -108,6 +160,7 @@ namespace _17_Func_Predicate_Compar
             return str;
         }
 
+        //---------ACTION-------------------
         static void Show()
         {
             SetColor(ConsoleColor.Red);
@@ -127,6 +180,7 @@ namespace _17_Func_Predicate_Compar
             Console.WriteLine(x+y);
         }
 
+        //------------FUNC--------------
         static int CountReturn(int x, int y)
         {
             Random r = new Random();
@@ -136,6 +190,7 @@ namespace _17_Func_Predicate_Compar
             return x + y;
         }
 
+        //-----HELP for buity------------------
         static void SetColor(ConsoleColor col)
         {
             Console.ForegroundColor = col;
